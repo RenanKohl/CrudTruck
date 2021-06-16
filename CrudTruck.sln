@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvo.CrudTruck.API", "src\Volvo.CrudTruck.API\Volvo.CrudTruck.API.csproj", "{BA524328-49F5-40BA-AC31-45278B6CA1F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvo.CrudTruck.Domain", "src\Volvo.CrudTruck.Domain\Volvo.CrudTruck.Domain.csproj", "{81759938-B47E-4BAF-852D-91E7274B3236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvo.CrudTruck.Application", "src\Volvo.CrudTruck.Application\Volvo.CrudTruck.Application.csproj", "{72760606-E7C6-4217-925C-C1DFE62E5105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvo.CrudTruck.Data", "src\Volvo.CrudTruck.Data\Volvo.CrudTruck.Data.csproj", "{7C338115-EA34-41AB-AACF-3AA1D0DC1F3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA524328-49F5-40BA-AC31-45278B6CA1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA524328-49F5-40BA-AC31-45278B6CA1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA524328-49F5-40BA-AC31-45278B6CA1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA524328-49F5-40BA-AC31-45278B6CA1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81759938-B47E-4BAF-852D-91E7274B3236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81759938-B47E-4BAF-852D-91E7274B3236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81759938-B47E-4BAF-852D-91E7274B3236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81759938-B47E-4BAF-852D-91E7274B3236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72760606-E7C6-4217-925C-C1DFE62E5105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72760606-E7C6-4217-925C-C1DFE62E5105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72760606-E7C6-4217-925C-C1DFE62E5105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72760606-E7C6-4217-925C-C1DFE62E5105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C338115-EA34-41AB-AACF-3AA1D0DC1F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C338115-EA34-41AB-AACF-3AA1D0DC1F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C338115-EA34-41AB-AACF-3AA1D0DC1F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C338115-EA34-41AB-AACF-3AA1D0DC1F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F7A1204-E72F-444B-A4FD-5EBCBECCF5A2}
+	EndGlobalSection
+EndGlobal

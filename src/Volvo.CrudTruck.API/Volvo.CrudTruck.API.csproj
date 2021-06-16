@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.16" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
+  	<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+	<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
+	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Volvo.CrudTruck.Application\Volvo.CrudTruck.Application.csproj" />
+    <ProjectReference Include="..\Volvo.CrudTruck.Data\Volvo.CrudTruck.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>
