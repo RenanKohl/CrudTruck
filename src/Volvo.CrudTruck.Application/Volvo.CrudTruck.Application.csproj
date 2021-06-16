@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Volvo.CrudTruck.Data\Volvo.CrudTruck.Data.csproj" />
     <ProjectReference Include="..\Volvo.CrudTruck.Domain\Volvo.CrudTruck.Domain.csproj" />
   </ItemGroup>
 

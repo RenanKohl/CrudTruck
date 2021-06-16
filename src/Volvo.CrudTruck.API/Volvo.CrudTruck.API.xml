@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Volvo.CrudTruck.API</name>
+    </assembly>
+    <members>
+        <member name="M:Volvo.CrudTruck.API.APIExtensions.AddJwtConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure JWT Authentication with configurations in app.settings
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Volvo.CrudTruck.API.APIExtensions.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure swagger dashboard visualization to API
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Volvo.CrudTruck.API.APIExtensions.RegisterDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add dependency injection 
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.AccountController.Login(Volvo.CrudTruck.Application.Models.UserModel.Request)">
+            <summary>
+            User login endpoint
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.GetAll">
+            <summary>
+            Search all trucks in database
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.GetById(System.Int32)">
+            <summary>
+            Search a truck in database by Id
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.Insert(Volvo.CrudTruck.Application.Models.TruckModel.Request)">
+            <summary>
+            Insert a new truck in database
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.Update(System.Int32,Volvo.CrudTruck.Application.Models.TruckModel.Request)">
+            <summary>
+            Update an existing truck in database
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.Delete(System.Int32)">
+            <summary>
+            Delete an existing truck in database
+            </summary>
+            <returns></returns>        
+        </member>
+    </members>
+</doc>

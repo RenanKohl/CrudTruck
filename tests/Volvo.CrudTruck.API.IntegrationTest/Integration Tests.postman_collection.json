@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "e875248a-119c-4e9f-a772-1aeb6f761fa9",
+		"name": "Integration Tests",
+		"description": "This collection tests API Endpoints of CrudTruck API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST Login request\", function () {\r",
+							"    var jsonData = pm.response.json();    \r",
+							"    pm.environment.set(\"access_token\", jsonData.data.accessToken);\r",
+							"    pm.expect(jsonData.error).to.eql(false);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"Rkohl\",\r\n    \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API-URL}}/account/login",
+					"host": [
+						"{{API-URL}}"
+					],
+					"path": [
+						"account",
+						"login"
+					]
+				},
+				"description": "Request to login into API"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert New Truck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"FM\",\r\n  \"modelYear\": 2021\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API-URL}}/Trucks",
+					"host": [
+						"{{API-URL}}"
+					],
+					"path": [
+						"Trucks"
+					]
+				},
+				"description": "Test to the insert new truck endpoint "
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Trucks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API-URL}}/Trucks",
+					"host": [
+						"{{API-URL}}"
+					],
+					"path": [
+						"Trucks"
+					]
+				},
+				"description": "Test to get endpoint for all trucks"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Existing Truck",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"Fh\",\r\n  \"modelYear\": 2022\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API-URL}}/Trucks/1",
+					"host": [
+						"{{API-URL}}"
+					],
+					"path": [
+						"Trucks",
+						"1"
+					]
+				},
+				"description": "Test to put endpoint for update an existing truck in trucks API"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Truck By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API-URL}}/Trucks/1",
+					"host": [
+						"{{API-URL}}"
+					],
+					"path": [
+						"Trucks",
+						"1"
+					]
+				},
+				"description": "Test to get by id endpoint for trucks API"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API-URL",
+			"value": "https://localhost:5001/api"
+		}
+	]
+}

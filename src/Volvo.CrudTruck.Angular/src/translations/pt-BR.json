@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "Crud Truck",
+  "About": "Sobre",
+  "Hello world !": "Olá Mundo !",
+  "Home": "Início",
+  "Logged in as": "Conectado como",
+  "Login": "Entrar",
+  "Logout": "Sair",
+  "Password": "Senha",
+  "Password is required": "A senha é obrigatória",
+  "Username": "Usuário",
+  "Username is required": "O usuário é obrigatório",
+  "Username or password incorrect.": "Usuário ou senha incorretos.",
+  "Remember me": "Lembre-se de mim",
+  "Version": "Versão"
+}
