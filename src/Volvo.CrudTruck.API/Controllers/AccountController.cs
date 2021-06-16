@@ -21,10 +21,10 @@ namespace Volvo.CrudTruck.API.Controllers
         }
 
         /// <summary>
-        /// User login
+        /// User login endpoint
         /// </summary>
         /// <returns></returns>        
-        [HttpPost]
+        [HttpPost("Login")]
         [ProducesResponseType(typeof(BaseModel<UserModel.Response>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BaseModel<UserModel.Response>), StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Login([FromBody]UserModel.Request request)

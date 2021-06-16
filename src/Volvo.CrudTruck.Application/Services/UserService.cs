@@ -11,7 +11,7 @@ using Volvo.CrudTruck.Application.Auth;
 using Volvo.CrudTruck.Application.Interfaces;
 using Volvo.CrudTruck.Application.Models;
 using Volvo.CrudTruck.Application.Validators;
-using Volvo.CrudTruck.Domain.Repository;
+using Volvo.CrudTruck.Data.Repository;
 
 namespace Volvo.CrudTruck.Application.Services
 {
@@ -36,12 +36,12 @@ namespace Volvo.CrudTruck.Application.Services
 
             if (!results.IsValid)
             {
-                return new BaseModel<UserModel.Response>(true, "Usuário ou senha inválido(s)", null, results.Errors.ToArray());
+                return new BaseModel<UserModel.Response>(true, "Usuário ou senha inválido(s)", null, BaseModel<UserModel.Response>.SerializeErrors(results.Errors));
             }
 
             var userAuthenticated = await _repository.Login(request.Login, request.Password);
 
-            if (userAuthenticated.Equals(null))
+            if (userAuthenticated == null)
                 return new BaseModel<UserModel.Response>(true, "Usuário ou senha inválido(s)");
 
             return new BaseModel<UserModel.Response>(false, "Login realizado com sucesso", GenerateToken(userAuthenticated.Name, _signingConfigurations, _tokenConfigurations));

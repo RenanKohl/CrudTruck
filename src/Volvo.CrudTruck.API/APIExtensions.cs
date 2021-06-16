@@ -13,7 +13,8 @@ using Volvo.CrudTruck.API.Helpers;
 using Volvo.CrudTruck.Application.Auth;
 using Volvo.CrudTruck.Application.Interfaces;
 using Volvo.CrudTruck.Application.Services;
-using Volvo.CrudTruck.Domain.Repository;
+using Volvo.CrudTruck.Data;
+using Volvo.CrudTruck.Data.Repository;
 
 namespace Volvo.CrudTruck.API
 {
@@ -117,6 +118,10 @@ namespace Volvo.CrudTruck.API
             //services.AddScoped<IMediatorHandler, MediatorHandler>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<ITruckService, TruckService>();
+            services.AddScoped<ITruckRepository, TruckRepository>();
+
 
             services.AddScoped<SeedingService>();
 

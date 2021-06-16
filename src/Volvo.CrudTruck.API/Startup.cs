@@ -50,12 +50,9 @@ namespace Volvo.CrudTruck.API
             app.UseSwagger();
 
             app.UseSwaggerUI(options =>
-            {
-                var clientConfig = Configuration.GetSection("AuthConfiguration").GetSection("Client");
+            {                
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "CrudTruck");
-                options.RoutePrefix = clientConfig.GetValue<string>("RoutePrefix");
-                options.OAuthClientId(clientConfig.GetValue<string>("OAuthClientId"));
-                options.OAuthAppName(clientConfig.GetValue<string>("OAuthAppName"));
+                options.RoutePrefix = "api/swagger";
             });
 
             app.UseHttpsRedirection();
