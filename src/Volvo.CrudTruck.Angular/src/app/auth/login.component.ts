@@ -25,8 +25,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private formBuilder: FormBuilder,
-    private authenticationService: AuthenticationService,
-    // private credentialsService: CredentialsService
+    private authenticationService: AuthenticationService
   ) {
     this.createForm();
   }
@@ -35,41 +34,32 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.isLoading = true;
-    const login$ = this.authenticationService.login(this.loginForm.value).then(res => {
-      if(!res.error){
-        const data = {
-          username: res.data.name,
-          token: res.data.accessToken,
-        };
-        // this.credentialsService.setCredentials(data, false);
-      }
-    });
-    // login$
-    //   .pipe(
-    //     finalize(() => {
-    //       this.loginForm.markAsPristine();
-    //       this.isLoading = false;
-    //     }),
-    //     untilDestroyed(this)
-    //   )
-    //   .subscribe(
-    //     (credentials) => {
-    //       console.log(credentials)  
-    //       // log.debug(`${credentials.username} successfully logged in`);
-    //       this.router.navigate([this.route.snapshot.queryParams.redirect || '/'], { replaceUrl: true });
-    //     },
-    //     (error) => {
-    //       console.log(error)
-    //       log.debug(`Login error: ${error}`);
-    //       this.error = error;
-    //     }
-    //   );
+    this.authenticationService
+      .login(this.loginForm.value)
+      .then((res) => {
+        this.isLoading = false;
+        if (!res.error) {
+          this.error = undefined;
+          const data = {
+            username: res.data.name,
+            token: res.data.accessToken,
+          };
+          this.loginForm.markAsPristine();
+          untilDestroyed(this);
+          this.router.navigate([this.route.snapshot.queryParams.redirect || '/'], { replaceUrl: true });
+          this.authenticationService.credentialsService.setCredentials(data, false);
+        } else {
+          console.log(res.message);
+          this.error = res.message;
+        }
+      })
+      .finally(() => (this.isLoading = false));
   }
 
   private createForm() {
     this.loginForm = this.formBuilder.group({
       login: ['', Validators.required],
-      password: ['', Validators.required]      
+      password: ['', Validators.required],
     });
   }
 }

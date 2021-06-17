@@ -87,7 +87,7 @@ namespace Volvo.CrudTruck.API
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Volvo .NET Test ",
-                    Description = "Truck registry crud",
+                    Description = "Truck registry REST API",
                     Version = "v1",
                     Contact = new OpenApiContact()
                     {
@@ -97,7 +97,7 @@ namespace Volvo.CrudTruck.API
                     }
                 });
 
-                c.OperationFilter<AuthResponsesOperationFilter>();
+                //c.OperationFilter<AuthResponsesOperationFilter>();
 
                 string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);

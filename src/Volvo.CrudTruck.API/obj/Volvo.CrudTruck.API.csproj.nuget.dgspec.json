@@ -1,46 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj": {}
+    "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj": {}
   },
   "projects": {
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj": {
+    "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+        "projectUniqueName": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
         "projectName": "Volvo.CrudTruck.API",
-        "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
+        "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
+        "originalTargetFrameworks": ["netcoreapp3.1"],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.kohlsolutions.com.br/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
-                "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
+              "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
+                "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
               },
-              "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
-                "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
+              "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
+                "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
               }
             }
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         }
       },
       "frameworks": {
@@ -48,6 +47,10 @@
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.16, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.1.16, )"
             },
@@ -68,14 +71,7 @@
               "version": "[5.6.3, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
+          "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
@@ -90,43 +86,42 @@
         }
       }
     },
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
+    "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj",
+        "projectUniqueName": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj",
         "projectName": "Volvo.CrudTruck.Application",
-        "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\obj\\",
+        "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
+        "originalTargetFrameworks": ["netcoreapp3.1"],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.kohlsolutions.com.br/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
-                "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
+              "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
+                "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
               },
-              "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
-                "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
+              "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
+                "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
               }
             }
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         }
       },
       "frameworks": {
@@ -154,14 +149,7 @@
               "version": "[6.11.1, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
+          "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
@@ -173,40 +161,39 @@
         }
       }
     },
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
+    "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
+        "projectUniqueName": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
         "projectName": "Volvo.CrudTruck.Data",
-        "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\obj\\",
+        "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
+        "originalTargetFrameworks": ["netcoreapp3.1"],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.kohlsolutions.com.br/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
-                "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
+              "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
+                "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
               }
             }
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         }
       },
       "frameworks": {
@@ -226,14 +213,7 @@
               "version": "[5.0.0, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
+          "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
@@ -245,25 +225,26 @@
         }
       }
     },
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
+    "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
         "projectName": "Volvo.CrudTruck.Domain",
-        "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\obj\\",
+        "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
+        "originalTargetFrameworks": ["netcoreapp3.1"],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.kohlsolutions.com.br/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -272,22 +253,13 @@
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         }
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
+          "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {

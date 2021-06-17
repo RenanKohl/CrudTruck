@@ -1,0 +1,67 @@
+mat-toolbar.table-header {
+  height: 42px;
+  min-height: 42px;
+
+  mat-toolbar-row {
+    height: 42px;
+    min-height: 42px;
+
+    .fill-remaining-space {
+      flex: 1 1 auto;
+    }
+
+    .dropdown-menu-checkbox {
+      a {
+        line-height: 24px;
+        cursor: pointer;
+
+        i {
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+table.mat-table {
+  min-width: auto !important;
+  width: 100% !important;
+
+  .mat-header-row {
+    height: 40px !important;
+
+    .mat-header-cell {
+      font-weight: 900 !important;
+    }
+  }
+
+  .mat-row {
+    height: 32px !important;
+    width: 100%;
+  }
+}
+
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding-right: 14px !important;
+}
+
+.mat-header-cell,
+.mat-cell:not(:last-child) {
+  padding-right: 4px !important;
+}
+
+button.btn-action-80 {
+  min-width: 80px !important;
+}
+
+.table-no-data {
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.mat-row.clickable {
+  cursor: pointer;
+}

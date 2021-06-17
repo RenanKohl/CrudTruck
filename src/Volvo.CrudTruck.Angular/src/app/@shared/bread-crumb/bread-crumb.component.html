@@ -1,0 +1,20 @@
+<div class="row mb-2">
+  <div class="col-sm-6">
+    <h1 class="m-0 text-dark">{{ titulo | translate }}</h1>
+  </div>
+  <!-- /.col -->
+  <div class="col-sm-6">
+    <ol class="breadcrumb float-sm-right">
+      <li *ngFor="let item of items" class="breadcrumb-item" [class.active]="isTheLastItem(item)">
+        <span *ngIf="isTheLastItem(item)">
+          {{ item.text | translate }}
+        </span>
+
+        <a *ngIf="!isTheLastItem(item)" [routerLink]="item.link">
+          {{ item.text | translate }}
+        </a>
+      </li>
+    </ol>
+  </div>
+  <!-- /.col -->
+</div>

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbTimeAdapter } from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from '@env/environment';
 import { CoreModule } from '@core';
@@ -14,6 +14,11 @@ import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { MatPaginatorIntl } from '@angular/material/paginator';
+import { CustomMatPaginatorIntl } from './@core/helper/custom-paginator-intl';
+import { NgbTimeStringAdapter } from './@core/helper/ngb-time-adapter';
 
 @NgModule({
   imports: [
@@ -23,15 +28,24 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     TranslateModule.forRoot(),
     NgbModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
     CoreModule,
     SharedModule,
     ShellModule,
     HomeModule,
     AuthModule,
-    AppRoutingModule, // must be imported as the last module as it contains the fallback route
+    AppRoutingModule,
+    BrowserAnimationsModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
-  providers: [],
+  providers: [
+    { provide: MatPaginatorIntl, useClass: CustomMatPaginatorIntl },
+    { provide: NgbTimeAdapter, useClass: NgbTimeStringAdapter },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

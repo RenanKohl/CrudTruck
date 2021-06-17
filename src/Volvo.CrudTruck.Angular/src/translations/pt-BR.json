@@ -1,8 +1,9 @@
 {
   "APP_NAME": "Crud Truck",
   "About": "Sobre",
-  "Hello world !": "Olá Mundo !",
+  "Welcome": "Bem vindo!",
   "Home": "Início",
+  "About Description": "Esse projeto é uma interface visual para manter dados sobre caminhões. Exemplo: Modelo, Ano de Fabricação, Ano do Modelo, Número de Chassi, Número do Motor",
   "Logged in as": "Conectado como",
   "Login": "Entrar",
   "Logout": "Sair",
@@ -12,5 +13,28 @@
   "Username is required": "O usuário é obrigatório",
   "Username or password incorrect.": "Usuário ou senha incorretos.",
   "Remember me": "Lembre-se de mim",
-  "Version": "Versão"
+  "Version": "Versão",
+  "Truck": "Caminhões",
+  "New": "Novo",
+  "Model": "Modelo",
+  "Fabrication": "Fabricação",
+  "ModelYear": "Ano do Modelo",
+  "ChassisCode": "Número de Chassi",
+  "EngineCode": "Número do Motor",
+  "Actions": "Ações",
+
+  "No data found": "Sem dados a exibir",
+  "PAGINATOR.ITEMS_PER_PAGE": "Registros por página",
+  "PAGINATOR.NEXT_PAGE": "Próxima página",
+  "PAGINATOR.PREVIOUS_PAGE": "Voltar página",
+  "PAGINATOR.OF_LABEL": "de",
+
+  "Edit": "Editar",
+  "Save": "Salvar",
+  "Delete": "Excluir",
+  "Search": "Pesquisar",
+  "Filter": "Filtro",
+
+  "Confirm Delete": "Deseja realmente excluir este item?",
+  "Cancel": "Cancelar"
 }
