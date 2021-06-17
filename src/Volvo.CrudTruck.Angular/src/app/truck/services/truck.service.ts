@@ -5,6 +5,7 @@ import { environment } from '@env/environment';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Truck } from '../model/truck';
+import { TruckModel } from '../model/truck.model';
 
 @Injectable({
   providedIn: 'root',
@@ -31,7 +32,7 @@ export class TruckService {
     );
   }
 
-  create(resource: Truck, token: string): Observable<BaseResponse<Truck>> {
+  create(resource: TruckModel, token: string): Observable<BaseResponse<Truck>> {
     return this.http.post(this.apiPath, resource, this.setHeader(token)).pipe(
       map((res: any) => {
         return res;
@@ -39,8 +40,8 @@ export class TruckService {
     );
   }
 
-  update(resource: Truck, token: string): Observable<BaseResponse<Truck>> {
-    const url = `${this.apiPath}/${resource.id}`;
+  update(id: number, resource: TruckModel, token: string): Observable<BaseResponse<Truck>> {
+    const url = `${this.apiPath}/${id}`;
     return this.http.put(url, resource, this.setHeader(token)).pipe(
       map((res: any) => {
         return res;

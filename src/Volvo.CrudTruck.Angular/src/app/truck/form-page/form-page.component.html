@@ -4,7 +4,7 @@
     [items]="[
       { text: 'Home', link: '/' },
       { text: 'Truck', link: '/truck' },
-      { text: 'New', link: '/truck/new' }
+      { text: pageTitle }
     ]"
   ></app-bread-crumb>
 
@@ -35,16 +35,15 @@
               </div>
               <div class="col">
                 <div class="form-group">
-                  <label for="name" class="mb-1" translate>Model Year</label>
+                  <label for="name" class="mb-1" translate>ModelYear</label>
                   <select
-                    id="name"
                     class="form-control"
                     formControlName="modelYear"
                     [ngClass]="{
                       'is-invalid': formData.get('modelYear').touched && formData.controls['modelYear'].invalid
                     }"
                   >
-                    <option *ngFor="let year of yearModels" [value]="year">{{ year }}</option>
+                    <option *ngFor="let year of yearModels" [ngValue]="year">{{ year }}</option>
                   </select>
                   <app-form-field-error [form-control]="formData.get('modelYear')"></app-form-field-error>
                 </div>
@@ -57,7 +56,7 @@
             </button>
 
             <button type="button" class="btn btn-default btn-sm" (click)="back()">
-              <i class="fas fa-times"></i> {{ 'Back' | translate }}
+              <i class="fas fa-arrow-alt-circle-left"></i> {{ 'Back' | translate }}
             </button>
           </div>
         </form>

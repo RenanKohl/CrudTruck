@@ -30,7 +30,7 @@ export class ListPageComponent implements OnInit {
   public warning: string;
   public event: string;
   public new: string;
-  public searchPlaceholder: string;
+  public searchPlaceholder: string = '';
   public filter: string;
 
   private token: string;

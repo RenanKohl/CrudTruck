@@ -7,11 +7,13 @@ import { CredentialsService } from '@app/auth';
 import { I18nService } from '@app/i18n';
 import { TranslateService } from '@ngx-translate/core';
 import { parseInt } from 'lodash';
+import * as moment from 'moment';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
-import { switchMap } from 'rxjs/internal/operators/switchMap';
+import { switchMap } from 'rxjs/operators';
 import Swal from 'sweetalert2';
 import { Truck } from '../model/truck';
+import { TruckModel } from '../model/truck.model';
 import { TruckService } from '../services/truck.service';
 
 const log = new Logger('FormPageComponent');
@@ -30,6 +32,7 @@ export class FormPageComponent implements OnInit {
   pageTitle: string;
   serverErrorMessages: string[] = null;
   submittingForm = false;
+  yearModels: number[] = [];
 
   protected token: string;
 
@@ -55,6 +58,7 @@ export class FormPageComponent implements OnInit {
     this.setCurrentAction();
     this.buildForm();
     this.loadResource(this.token);
+    this.getYears();
   }
 
   protected loadResource(token: string) {
@@ -84,7 +88,6 @@ export class FormPageComponent implements OnInit {
   submitForm(event: any) {
     this.spinner.show();
     this.submittingForm = true;
-    console.log(this.submittingForm);
     if (this.currentAction === 'new') {
       this.create();
     } else {
@@ -100,28 +103,24 @@ export class FormPageComponent implements OnInit {
   back() {
     this.router.navigateByUrl('/truck');
   }
-  get yearModels(): number[] {
-    // const year = new Date().getFullYear();
-    let yearModels = [];
-    for (let year = new Date().getFullYear(); year < year + 2; year++) {
-      yearModels.push(year);
+  getYears(){    
+    let year = moment().year();
+    for (let i = year; i < year + 2; i++) {
+      this.yearModels.push(i);
     }
-
-    return yearModels;
   }
 
   protected create() {
-    const truck: Truck = Object.assign(Truck, this.formData.value);
-
-    this.truckService.create(truck, this.token).subscribe(
+    let model: TruckModel = Object.assign(this.formData.value, TruckModel)    
+    this.truckService.create(model, this.token).subscribe(
       (response) => this.actionsForSuccess(response),
       (error) => this.actionsForError(error)
     );
   }
 
-  protected update() {
-    const truck: Truck = Object.assign(Truck, this.formData.value);
-    this.truckService.update(truck, this.token).subscribe(
+  protected update() {   
+    let model: TruckModel = Object.assign(this.formData.value, TruckModel)
+    this.truckService.update(this.truck.id, model, this.token).subscribe(
       (response) => this.actionsForSuccess(response),
       (error) => this.actionsForError(error)
     );
@@ -146,7 +145,6 @@ export class FormPageComponent implements OnInit {
 
   protected buildForm(): void {
     this.formData = this.formBuilder.group({
-      id: [null],
       model: [null, [Validators.required]],
       modelYear: [null, [Validators.required]],
     });
