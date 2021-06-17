@@ -33,11 +33,17 @@ namespace Volvo.CrudTruck.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SeedingService seedingService)
         {
+
             seedingService.Seed();
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseSpaStaticFiles();
+                app.UseHsts();
             }
 
             app.UseCors(builder => builder.AllowAnyMethod()
@@ -66,12 +72,12 @@ namespace Volvo.CrudTruck.API
                     endpoints.MapControllers();
                 });
 
-            //app.UseSpa(spa =>
-            //{
-            //    spa.Options.SourcePath = "wwwroot";
-            //    if (env.IsDevelopment())
-            //        spa.UseProxyToSpaDevelopmentServer(Configuration.GetValue<string>("AngularCliDeveloperServer"));
-            //});
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "wwwroot";
+                if (env.IsDevelopment())
+                    spa.UseProxyToSpaDevelopmentServer(Configuration.GetValue<string>("AngularCliDeveloperServer"));
+            });
         }
     }
 }

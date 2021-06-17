@@ -1,8 +1,18 @@
 <div class="container-fluid">
+  <app-bread-crumb
+    [titulo]="'About'"
+    [items]="[
+      { text: 'Home', link: '/' },
+      { text: 'About', link: '/about' }
+    ]"
+  ></app-bread-crumb>
   <div class="jumbotron text-center">
     <h1>
       <span translate>APP_NAME</span>
     </h1>
-    <p><i class="far fa-bookmark"></i> <span translate>Version</span> {{ version }}</p>
+    <p><i class="far fa-bookmark"></i> <span translate>About Description</span></p>
+    <p><i class="fas fa-code"></i> <span translate>https://localhost:5001/api/swagger</span></p>
+
+    <p><i class="fas fa-laptop-code"></i><span>https://github.com/RenanKohl/CrudTruck</span></p>
   </div>
 </div>

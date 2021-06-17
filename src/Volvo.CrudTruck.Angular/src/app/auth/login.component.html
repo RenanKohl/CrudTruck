@@ -2,7 +2,11 @@
   <div class="login-box">
     <h1 translate>APP_NAME</h1>
     <div>
-      <h6 class="d-inline-block">v{{ version }}</h6>
+      <h6 class="d-inline-block ml-3">Usuário:</h6>
+      <span>Rkohl</span>
+      <br />
+      <h6 class="d-inline-block ml-3">Senha:</h6>
+      <span>123</span>
       <div class="d-inline-block ml-3">
         <app-language-selector></app-language-selector>
       </div>
@@ -53,12 +57,7 @@
                   Password is required
                 </small>
               </label>
-              <div class="form-check">
-                <!-- <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input" formControlName="remember" />
-                  <span translate>Remember me</span>
-                </label> -->
-              </div>
+              <div class="form-check"></div>
             </div>
             <button class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
               <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>

@@ -2,3 +2,64 @@
  * Global application theme.
  * Framework overrides and customization goes here.
  */
+/* Tema do Angular Material */
+@import "./material-theme.scss";
+
+/* Estrutural */
+.fas.fa-check {
+  color: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.content-wrapper {
+  .content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.bs-datepicker-head,
+.bs-datepicker-head,
+.bs-datepicker button:active,
+.bs-datepicker-body table td span.selected,
+.bs-datepicker-body table td.selected span,
+.bs-datepicker-body table td span[class*="select-"]:after,
+.bs-datepicker-body table td[class*="select-"] span:after,
+.bs-datepicker-body table td.active-week span:hover {
+  background-color: #3c8dbc !important;
+}
+
+.bs-datepicker-body table td.week span {
+  color: #3c8dbc !important;
+}
+
+@import "./form.scss";
+
+/* Lib Component Customization */
+@import "./confirmation-popover.scss";
+@import "./material-table.scss";
+@import "./material-dialog.scss";
