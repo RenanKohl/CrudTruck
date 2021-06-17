@@ -22,6 +22,7 @@
   "ChassisCode": "Número de Chassi",
   "EngineCode": "Número do Motor",
   "Actions": "Ações",
+  "Back": "Voltar",
 
   "No data found": "Sem dados a exibir",
   "PAGINATOR.ITEMS_PER_PAGE": "Registros por página",
@@ -36,5 +37,9 @@
   "Filter": "Filtro",
 
   "Confirm Delete": "Deseja realmente excluir este item?",
-  "Cancel": "Cancelar"
+  "Cancel": "Cancelar",
+  "Loading": "Carregando",
+
+  "pt-BR": "Português",
+  "en-US": "Inglês"
 }

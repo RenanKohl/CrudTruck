@@ -23,7 +23,9 @@
         "runtime": {
           "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "FluentValidation.DependencyInjectionExtensions/10.2.3": {
         "type": "package",
@@ -49,7 +51,9 @@
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.NodeServices/3.1.16": {
         "type": "package",
@@ -63,7 +67,9 @@
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.NodeServices.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.SpaServices/3.1.16": {
         "type": "package",
@@ -76,7 +82,9 @@
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.SpaServices.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.SpaServices.Extensions/3.1.16": {
         "type": "package",
@@ -90,7 +98,9 @@
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.SpaServices.Extensions.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
@@ -490,7 +500,9 @@
         "runtime": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
         "type": "package",
@@ -503,7 +515,9 @@
         "runtime": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
         "type": "package",
@@ -513,7 +527,9 @@
         "runtime": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "System.Collections.Immutable/1.7.1": {
         "type": "package",
@@ -1670,45 +1686,45 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\renan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rekohl.ICI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+      "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
       "projectName": "Volvo.CrudTruck.API",
-      "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
-      "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
+      "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+      "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
+      "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
-      "originalTargetFrameworks": ["netcoreapp3.1"],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.kohlsolutions.com.br/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
-              "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
+            "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
+              "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
             },
-            "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
-              "projectPath": "C:\\Users\\renan\\Desktop\\TESTEVOLVO\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
+            "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
+              "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
             }
           }
         }
       },
       "warningProperties": {
-        "warnAsError": ["NU1605"]
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -1740,7 +1756,14 @@
             "version": "[5.6.3, )"
           }
         },
-        "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {

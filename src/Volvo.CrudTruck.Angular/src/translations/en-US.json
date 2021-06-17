@@ -22,6 +22,7 @@
   "ChassisCode": "Chassis Code",
   "EngineCode": "Engine Code",
   "Actions": "Actions",
+  "Back": "Return",
 
   "No data found": "No data found",
   "PAGINATOR.ITEMS_PER_PAGE": "Items per page",
@@ -37,5 +38,9 @@
 
   "Confirm Delete": "Are you sure?",
   "Yes": "Yes",
-  "Cancel": "Cancel"
+  "Cancel": "Cancel",
+  "Loading": "Loading",
+
+  "pt-BR": "Portuguese",
+  "en-US": "English"
 }
