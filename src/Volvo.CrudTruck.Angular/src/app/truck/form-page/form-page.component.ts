@@ -103,7 +103,7 @@ export class FormPageComponent implements OnInit {
   back() {
     this.router.navigateByUrl('/truck');
   }
-  getYears(){    
+  getYears() {
     let year = moment().year();
     for (let i = year; i < year + 2; i++) {
       this.yearModels.push(i);
@@ -111,15 +111,15 @@ export class FormPageComponent implements OnInit {
   }
 
   protected create() {
-    let model: TruckModel = Object.assign(this.formData.value, TruckModel)    
+    let model: TruckModel = Object.assign(this.formData.value, TruckModel);
     this.truckService.create(model, this.token).subscribe(
       (response) => this.actionsForSuccess(response),
       (error) => this.actionsForError(error)
     );
   }
 
-  protected update() {   
-    let model: TruckModel = Object.assign(this.formData.value, TruckModel)
+  protected update() {
+    let model: TruckModel = Object.assign(this.formData.value, TruckModel);
     this.truckService.update(this.truck.id, model, this.token).subscribe(
       (response) => this.actionsForSuccess(response),
       (error) => this.actionsForError(error)
