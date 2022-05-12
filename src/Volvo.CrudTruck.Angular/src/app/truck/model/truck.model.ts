@@ -1,4 +1,4 @@
-export class TruckModel{
-    model: string;
-    modelYear: number;
+export class TruckModel {
+  model: string;
+  modelYear: number;
 }
