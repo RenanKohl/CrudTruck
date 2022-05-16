@@ -1,6 +1,7 @@
 {
-  "name": "Crud Truck",
-  "short_name": "Crud Truck",
+  "gcm_sender_id": "203765445359",
+  "name": "Progressive Web App",
+  "short_name": "Progressive Web App",
   "theme_color": "#488aff",
   "background_color": "#488aff",
   "display": "standalone",

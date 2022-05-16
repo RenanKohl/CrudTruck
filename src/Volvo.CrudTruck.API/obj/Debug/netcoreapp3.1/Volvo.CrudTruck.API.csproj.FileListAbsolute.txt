@@ -1,4 +1,3 @@
-C:\temp\CrudTruck\src\Volvo.CrudTruck.API\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.API.csprojAssemblyReference.cache
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.API.AssemblyInfoInputs.cache
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.API.AssemblyInfo.cs
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.API.csproj.CoreCompileInputs.cache
@@ -140,3 +139,4 @@ C:\temp\CrudTruck\src\Volvo.CrudTruck.API\bin\Debug\netcoreapp3.1\Microsoft.Exte
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 C:\temp\CrudTruck\src\Volvo.CrudTruck.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\temp\CrudTruck\src\Volvo.CrudTruck.API\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.API.csproj.AssemblyReference.cache

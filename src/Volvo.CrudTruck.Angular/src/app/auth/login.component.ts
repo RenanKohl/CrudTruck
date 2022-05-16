@@ -6,6 +6,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { environment } from '@env/environment';
 import { Logger, UntilDestroy, untilDestroyed } from '@core';
 import { AuthenticationService } from './authentication.service';
+import { SwPush } from '@angular/service-worker';
+import { MessagingService } from '@app/@shared/services/messaging.service';
 
 const log = new Logger('Login');
 
@@ -21,11 +23,13 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   isLoading = false;
 
+  readonly VAPID_PUBLIC_KEY = environment.vapidPublicKey;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private formBuilder: FormBuilder,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
   ) {
     this.createForm();
   }
@@ -39,6 +43,7 @@ export class LoginComponent implements OnInit {
       .then((res) => {
         this.isLoading = false;
         if (!res.error) {
+          this.notifyNewLogin();
           this.error = undefined;
           const data = {
             username: res.data.name,
@@ -55,6 +60,9 @@ export class LoginComponent implements OnInit {
       })
       .finally(() => (this.isLoading = false));
   }
+  notifyNewLogin() {
+   
+  }
 
   private createForm() {
     this.loginForm = this.formBuilder.group({
@@ -62,4 +70,6 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required],
     });
   }
+
+  
 }

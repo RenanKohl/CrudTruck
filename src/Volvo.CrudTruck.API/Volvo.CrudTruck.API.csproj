@@ -13,6 +13,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.16" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.16" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
@@ -24,10 +31,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Volvo.CrudTruck.Application\Volvo.CrudTruck.Application.csproj" />
     <ProjectReference Include="..\Volvo.CrudTruck.Data\Volvo.CrudTruck.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 

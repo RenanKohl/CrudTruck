@@ -3,7 +3,6 @@ C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTru
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.pdb
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Domain.dll
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Domain.pdb
-C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csprojAssemblyReference.cache
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.AssemblyInfoInputs.cache
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.AssemblyInfo.cs
 C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.CoreCompileInputs.cache
@@ -22,3 +21,4 @@ C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\n
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.CopyComplete
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.dll
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.pdb
+C:\temp\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.AssemblyReference.cache

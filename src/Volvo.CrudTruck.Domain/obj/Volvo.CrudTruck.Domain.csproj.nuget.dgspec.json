@@ -10,11 +10,14 @@
         "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
         "projectName": "Volvo.CrudTruck.Domain",
         "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\A392796\\.nuget\\packages\\",
         "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\A392796\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://nexus.it.volvo.net/repository/nuget-drs-ms": {},
+          "http://nexus.it.volvo.net/repository/nuget.org-proxy/": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,11 +19,24 @@ import { ToastrModule } from 'ngx-toastr';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { CustomMatPaginatorIntl } from './@core/helper/custom-paginator-intl';
 import { NgbTimeStringAdapter } from './@core/helper/ngb-time-adapter';
-
+import * as firebase from 'firebase/app';
+    
+// Initialize Firebase
+export const config = {
+  apiKey: "AIzaSyBIQH-QtQoL9pMJMH29pn8fRCVJwf7m6I0",
+  authDomain: "crudtruck.firebaseapp.com",
+  projectId: "crudtruck",
+  storageBucket: "crudtruck.appspot.com",
+  messagingSenderId: "203765445359",
+  appId: "1:203765445359:web:6b9e12339192fa61e9e11a"
+};
+firebase.initializeApp(config);    
+    
 @NgModule({
   imports: [
+   
     BrowserModule,
-    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot(),
@@ -38,6 +51,7 @@ import { NgbTimeStringAdapter } from './@core/helper/ngb-time-adapter';
     ShellModule,
     HomeModule,
     AuthModule,
+
     AppRoutingModule,
     BrowserAnimationsModule, // must be imported as the last module as it contains the fallback route
   ],

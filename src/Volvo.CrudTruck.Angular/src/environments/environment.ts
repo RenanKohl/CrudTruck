@@ -16,6 +16,16 @@ export const environment = {
   serverUrl: 'https://localhost:5001/api',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'pt-BR'],
+  vapidPublicKey:
+    'AAAAL3Fd8u8:APA91bGg0KMPRmjXn-PdVwSkXob4Xg3GXMUVSNZdXuOsGDJof6qnaDHY87HaZJUP79Bnu2C8ifeOdgUmw_LDeWU9_0zSooCMuEuSbNVUuc8Q7Xroslo6mB8K8jaZaoquJuB1UIlxCXZ7',
+  firebase: {
+    apiKey: "AIzaSyBIQH-QtQoL9pMJMH29pn8fRCVJwf7m6I0",
+    authDomain: "crudtruck.firebaseapp.com",
+    projectId: "crudtruck",
+    storageBucket: "crudtruck.appspot.com",
+    messagingSenderId: "203765445359",
+    appId: "1:203765445359:web:6b9e12339192fa61e9e11a"
+  }
 };
 
 /*
