@@ -19,22 +19,24 @@ import { ToastrModule } from 'ngx-toastr';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { CustomMatPaginatorIntl } from './@core/helper/custom-paginator-intl';
 import { NgbTimeStringAdapter } from './@core/helper/ngb-time-adapter';
-import * as firebase from 'firebase/app';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireMessagingModule } from '@angular/fire/compat/messaging';
     
-// Initialize Firebase
-export const config = {
-  apiKey: "AIzaSyBIQH-QtQoL9pMJMH29pn8fRCVJwf7m6I0",
-  authDomain: "crudtruck.firebaseapp.com",
-  projectId: "crudtruck",
-  storageBucket: "crudtruck.appspot.com",
-  messagingSenderId: "203765445359",
-  appId: "1:203765445359:web:6b9e12339192fa61e9e11a"
-};
-firebase.initializeApp(config);    
+// // Initialize Firebase
+// export const config = {
+//   apiKey: "AIzaSyBIQH-QtQoL9pMJMH29pn8fRCVJwf7m6I0",
+//   authDomain: "crudtruck.firebaseapp.com",
+//   projectId: "crudtruck",
+//   storageBucket: "crudtruck.appspot.com",
+//   messagingSenderId: "203765445359",
+//   appId: "1:203765445359:web:6b9e12339192fa61e9e11a"
+// };
+// firebase.initializeApp(config);    
     
 @NgModule({
   imports: [
-   
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireMessagingModule,
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     FormsModule,
