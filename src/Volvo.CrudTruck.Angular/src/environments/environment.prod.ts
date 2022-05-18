@@ -9,7 +9,7 @@ import { env } from './.env';
 export const environment = {
   production: true,
   version: env.npm_package_version,
-  serverUrl: 'https://localhost:5001',
+  serverUrl: 'https://localhost:5001/api',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'pt-BR'],
 };

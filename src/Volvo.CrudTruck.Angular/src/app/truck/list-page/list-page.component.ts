@@ -33,7 +33,6 @@ export class ListPageComponent implements OnInit {
   public searchPlaceholder: string = '';
   public filter: string;
 
-  private token: string;
   public trucks: Truck[];
 
   displayedColumns = ['model', 'fabrication', 'modelYear', 'chassisCode', 'engineCode', 'actions'];
@@ -69,7 +68,6 @@ export class ListPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.token = this.credentialsService.credentials.token;
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTranslations();
     });
@@ -79,8 +77,9 @@ export class ListPageComponent implements OnInit {
 
   getTrucks() {
     this.spinner.show();
-    this.truckService.getAll(this.token).subscribe(
+    this.truckService.getAll().subscribe(
       (res: BaseResponse<Truck[]>) => {
+        console.log(res)
         if (res.error) {
           console.log(res.message);
           return;
@@ -88,7 +87,7 @@ export class ListPageComponent implements OnInit {
         this.trucks = res.data;
         this.renderGrid(this.trucks);
       },
-      (err) => {},
+      (err: any) => {},
       () => {
         this.spinner.hide();
       }
@@ -111,9 +110,9 @@ export class ListPageComponent implements OnInit {
       cancelButtonColor: '#d33',
       cancelButtonText: this.translateService.instant('Cancel'),
       confirmButtonText: this.translateService.instant('Yes'),
-    }).then((result) => {
+    }).then((result: any) => {
       if (result.isConfirmed) {
-        this.truckService.delete(item.id, this.token).subscribe((res: BaseResponse<any>) => {
+        this.truckService.delete(item.id).subscribe((res: BaseResponse<any>) => {
           if (res.error) {
             this.toastrService.error(`${res.message}`, this.event);
             return;
@@ -137,7 +136,7 @@ export class ListPageComponent implements OnInit {
 
   searchData() {
     this.spinner.show();
-    this.truckService.getAll(this.token).subscribe((res: BaseResponse<Truck[]>) => {
+    this.truckService.getAll().subscribe((res: BaseResponse<Truck[]>) => {
       this.trucks = res.data;
       this.spinner.hide();
       this.renderGrid(this.trucks);

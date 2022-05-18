@@ -692,19 +692,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rekohl.ICI\\.nuget\\packages\\": {}
+    "C:\\Users\\Renan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
       "projectName": "Volvo.CrudTruck.Data",
-      "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
-      "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\obj\\",
+      "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj",
+      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -718,8 +718,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
-              "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
+            "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
+              "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj"
             }
           }
         }
@@ -762,7 +762,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

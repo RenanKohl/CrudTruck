@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {}
+    "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {}
   },
   "projects": {
-    "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
+    "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
         "projectName": "Volvo.CrudTruck.Domain",
-        "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
-        "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

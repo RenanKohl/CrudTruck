@@ -22,3 +22,16 @@ C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\n
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.CopyComplete
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.dll
 C:\Users\renan\Desktop\TESTEVOLVO\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.pdb
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.deps.json
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.dll
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.pdb
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Domain.dll
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\bin\Debug\netcoreapp3.1\Volvo.CrudTruck.Domain.pdb
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.AssemblyReference.cache
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.AssemblyInfoInputs.cache
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.AssemblyInfo.cs
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.CoreCompileInputs.cache
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.csproj.CopyComplete
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.dll
+C:\Users\Renan\Desktop\Solutions\CrudTruck\src\Volvo.CrudTruck.Data\obj\Debug\netcoreapp3.1\Volvo.CrudTruck.Data.pdb
