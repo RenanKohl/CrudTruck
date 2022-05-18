@@ -9,6 +9,7 @@ import { environment } from '@env/environment';
 import { Logger, UntilDestroy, untilDestroyed } from '@core';
 import { I18nService } from '@app/i18n';
 import { MessagingService } from './@shared/services/messaging.service';
+import { AngularFireMessaging } from '@angular/fire/compat/messaging';
 
 const log = new Logger('App');
 
@@ -71,7 +72,7 @@ export class AppComponent implements OnInit, OnDestroy {
   requestNotifications() {
     this.messagingService.requestPermission()
     this.messagingService.receiveMessage()
-    console.log(this.messagingService.currentMessage)
+    this.messagingService.getToken();
   }
 
   ngOnDestroy() {

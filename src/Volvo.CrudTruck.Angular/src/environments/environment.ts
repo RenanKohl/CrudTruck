@@ -17,7 +17,7 @@ export const environment = {
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'pt-BR'],
   vapidPublicKey:
-    'AAAAL3Fd8u8:APA91bGg0KMPRmjXn-PdVwSkXob4Xg3GXMUVSNZdXuOsGDJof6qnaDHY87HaZJUP79Bnu2C8ifeOdgUmw_LDeWU9_0zSooCMuEuSbNVUuc8Q7Xroslo6mB8K8jaZaoquJuB1UIlxCXZ7',
+    'BMAbzi03PCeTHJVQvbQWCxNmMXbzKO99PbUPFvhnWHMzV_0CzFYGDrx1Ta9jRY1VAmTdbhXpjiOdDJQVp8mPaCI',
   firebase: {
     apiKey: "AIzaSyBIQH-QtQoL9pMJMH29pn8fRCVJwf7m6I0",
     authDomain: "crudtruck.firebaseapp.com",
