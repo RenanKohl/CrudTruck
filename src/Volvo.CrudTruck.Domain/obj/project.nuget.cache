@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mNlK/59tJrnbT/vtT37XpCWMizTFdvrmWLWLOH5k6yxfoPNzMUgr3YIexnmo5k8tC17NVUEL86Hef/MJok82fA==",
+  "dgSpecHash": "5VMj+NL8voCqg/m4XaB2h3SpQPeVUpLwBq3zQNOtvW6WeXnLFZoXwkX3C+ERndk4WHdZOzhUCoPN7Gh73cYhPQ==",
   "success": true,
-  "projectFilePath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Domain\\Volvo.CrudTruck.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

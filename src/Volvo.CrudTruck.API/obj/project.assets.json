@@ -1686,19 +1686,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rekohl.ICI\\.nuget\\packages\\": {}
+    "C:\\Users\\Renan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+      "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
       "projectName": "Volvo.CrudTruck.API",
-      "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
-      "packagesPath": "C:\\Users\\rekohl.ICI\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
+      "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.API\\Volvo.CrudTruck.API.csproj",
+      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rekohl.ICI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1712,11 +1712,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
-              "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
+            "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj": {
+              "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Application\\Volvo.CrudTruck.Application.csproj"
             },
-            "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
-              "projectPath": "C:\\temp\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
+            "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj": {
+              "projectPath": "C:\\Users\\Renan\\Desktop\\Solutions\\CrudTruck\\src\\Volvo.CrudTruck.Data\\Volvo.CrudTruck.Data.csproj"
             }
           }
         }
@@ -1774,7 +1774,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

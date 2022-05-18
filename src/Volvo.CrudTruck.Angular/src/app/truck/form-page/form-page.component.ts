@@ -34,8 +34,6 @@ export class FormPageComponent implements OnInit {
   submittingForm = false;
   yearModels: number[] = [];
 
-  protected token: string;
-
   constructor(
     private truckService: TruckService,
     private credentialsService: CredentialsService,
@@ -53,21 +51,20 @@ export class FormPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.token = this.credentialsService.credentials.token;
     this.getTranslations();
     this.setCurrentAction();
     this.buildForm();
-    this.loadResource(this.token);
+    this.loadResource();
     this.getYears();
   }
 
-  protected loadResource(token: string) {
+  protected loadResource() {
     this.spinner.show();
     if (this.currentAction == 'edit') {
       this.route.paramMap
         .pipe(
-          switchMap((params) => {
-            return this.truckService.getById(parseInt(params.get('id')), token);
+          switchMap((params: any) => {
+            return this.truckService.getById(parseInt(params.get('id')));
           })
         )
         .subscribe(
@@ -76,7 +73,7 @@ export class FormPageComponent implements OnInit {
             this.formData.patchValue(resource.data);
             this.spinner.hide();
           },
-          (error) => {
+          (error: any) => {
             Swal.fire('Aviso', 'Ocorreu um erro no servidor, tente mais tarde.');
             console.log(error);
           }
@@ -112,17 +109,17 @@ export class FormPageComponent implements OnInit {
 
   protected create() {
     let model: TruckModel = Object.assign(this.formData.value, TruckModel);
-    this.truckService.create(model, this.token).subscribe(
-      (response) => this.actionsForSuccess(response),
-      (error) => this.actionsForError(error)
+    this.truckService.create(model).subscribe(
+      (response: any) => this.actionsForSuccess(response),
+      (error: any) => this.actionsForError(error)
     );
   }
 
   protected update() {
     let model: TruckModel = Object.assign(this.formData.value, TruckModel);
-    this.truckService.update(this.truck.id, model, this.token).subscribe(
-      (response) => this.actionsForSuccess(response),
-      (error) => this.actionsForError(error)
+    this.truckService.update(this.truck.id, model).subscribe(
+      (response: any) => this.actionsForSuccess(response),
+      (error: any) => this.actionsForError(error)
     );
   }
 
@@ -132,9 +129,10 @@ export class FormPageComponent implements OnInit {
     }
 
     const baseComponentPath: string = this.route.snapshot.parent.url[0].path;
-    this.router.navigateByUrl(baseComponentPath, { skipLocationChange: true }).then(() => {
-      this.router.navigate([baseComponentPath, this.truck.id, 'edit']);
-    });
+    this.router.navigate([baseComponentPath]);
+    // this.router.navigateByUrl(baseComponentPath, { skipLocationChange: true }).then(() => {
+    //   this.router.navigate([baseComponentPath, this.truck.id, 'edit']);
+    // });
   }
 
   protected actionsForError(error: any) {
