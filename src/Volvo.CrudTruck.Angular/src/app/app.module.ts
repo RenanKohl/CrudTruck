@@ -21,7 +21,7 @@ import { CustomMatPaginatorIntl } from './@core/helper/custom-paginator-intl';
 import { NgbTimeStringAdapter } from './@core/helper/ngb-time-adapter';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireMessagingModule } from '@angular/fire/compat/messaging';
-  
+
 @NgModule({
   imports: [
     // AngularFireModule.initializeApp(environment.firebase),

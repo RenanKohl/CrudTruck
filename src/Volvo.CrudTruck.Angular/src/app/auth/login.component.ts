@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private formBuilder: FormBuilder,
-    private authenticationService: AuthenticationService,
+    private authenticationService: AuthenticationService
   ) {
     this.createForm();
   }
@@ -60,9 +60,7 @@ export class LoginComponent implements OnInit {
       })
       .finally(() => (this.isLoading = false));
   }
-  notifyNewLogin() {
-   
-  }
+  notifyNewLogin() {}
 
   private createForm() {
     this.loginForm = this.formBuilder.group({
@@ -70,6 +68,4 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required],
     });
   }
-
-  
 }

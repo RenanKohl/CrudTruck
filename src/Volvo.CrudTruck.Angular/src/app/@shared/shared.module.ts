@@ -11,7 +11,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormFieldErrorComponent } from './form-field-error/form-field-error.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
-
 @NgModule({
   imports: [CommonModule, TranslateModule, RouterModule, TranslateModule, I18nModule, NgbModule],
   declarations: [LoaderComponent, BreadCrumbComponent, FormFieldErrorComponent],
@@ -24,7 +23,6 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     I18nModule,
     NgbModule,
     NgxSpinnerModule,
-    
   ],
 })
 export class SharedModule {}

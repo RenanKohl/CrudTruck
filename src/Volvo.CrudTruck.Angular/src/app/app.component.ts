@@ -35,7 +35,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.handleAppConnectivityChanges();
-    this.requestNotifications()
+    this.requestNotifications();
     // Setup logger
     if (environment.production) {
       Logger.enableProductionMode();
@@ -70,8 +70,8 @@ export class AppComponent implements OnInit, OnDestroy {
       });
   }
   requestNotifications() {
-    this.messagingService.requestPermission()
-    this.messagingService.receiveMessage()
+    this.messagingService.requestPermission();
+    this.messagingService.receiveMessage();
     this.messagingService.getToken();
   }
 

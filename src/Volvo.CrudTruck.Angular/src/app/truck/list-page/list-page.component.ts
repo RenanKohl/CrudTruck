@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 
 import Swal from 'sweetalert2';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { OnlineOfflineService } from '@app/@core/onlineoffline.service';
 
 @Component({
   selector: 'app-list-page',
@@ -39,6 +40,8 @@ export class ListPageComponent implements OnInit {
   public noData = true;
   public selectedModel?: Truck;
   public dataSource = new MatTableDataSource<Truck>([]);
+  public isOnline: boolean;
+
 
   @ViewChild('paginator', { static: true }) paginator: MatPaginator;
   @ViewChild('sort', { static: true }) sort: MatSort;
@@ -49,7 +52,8 @@ export class ListPageComponent implements OnInit {
     private readonly translateService: TranslateService,
     private i18nService: I18nService,
     protected spinner: NgxSpinnerService,
-    private router: Router
+    private router: Router,
+    private readonly onlineOfflineService: OnlineOfflineService
   ) {}
 
   protected getTranslations(): void {
@@ -73,13 +77,39 @@ export class ListPageComponent implements OnInit {
     });
 
     this.getTrucks();
+
+    this.onlineOfflineService.connectionChanged.subscribe((online: any) => {
+      this.isOnline = online;
+      if(online){
+        this.getTrucks();
+      }else{
+        this.trucks.forEach(truck=>{
+          console.log(truck)
+        })
+      }
+      
+    })
   }
 
   getTrucks() {
     this.spinner.show();
+    console.log('get trucks')
+    console.log(this.onlineOfflineService.isOnline)
+  
+    if (this.onlineOfflineService.isOnline) {
+      console.log('from api')
+      this.getAllFromAPI()
+    }else{
+      console.log('from indexed db')
+      this.getAllFromIndexedDb();
+    }
+  
+  }
+
+  getAllFromAPI(){
     this.truckService.getAll().subscribe(
       (res: BaseResponse<Truck[]>) => {
-        console.log(res)
+        console.log(res);
         if (res.error) {
           console.log(res.message);
           return;
@@ -93,6 +123,16 @@ export class ListPageComponent implements OnInit {
       }
     );
   }
+
+  getAllFromIndexedDb(){
+    this.truckService.getAllFromIndexedDb().then(res =>{
+      this.trucks = res.data;
+      this.renderGrid(this.trucks);
+    }).finally(()=>{
+      this.spinner.hide()
+    })
+  }
+
   newItem() {
     this.router.navigate(['truck/new']);
   }

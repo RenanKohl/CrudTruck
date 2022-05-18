@@ -124,13 +124,13 @@
                   {{ 'Actions' | translate }}
                 </th>
                 <td mat-cell *matCellDef="let element">
-                  <a href="javascript:void(0)" (click)="editItem(element)">
+                  <a [class.disabled]="isOnline === false" href="javascript:void(0)" (click)="editItem(element)">
                     <span style="font-size: 1.5em; color: #0275d8" placement="top" [ngbTooltip]="editTooltip">
                       <i class="fas fa-edit"></i>
                     </span>
                   </a>
                   |
-                  <a href="javascript:void(0)" (click)="deleteItem(element)">
+                  <a [class.disabled]="isOnline === false" href="javascript:void(0)" (click)="deleteItem(element)">
                     <span style="font-size: 1.5em; color: #d9534f" placement="top" [ngbTooltip]="deleteTooltip">
                       <i class="fas fa-trash"></i>
                     </span>
