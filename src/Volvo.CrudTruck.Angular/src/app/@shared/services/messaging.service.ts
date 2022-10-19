@@ -5,13 +5,14 @@ import { getMessaging, getToken } from 'firebase/messaging';
 import { SwPush } from '@angular/service-worker';
 import { environment } from '@env/environment';
 import { mergeMap } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MessagingService {
   currentMessage = new BehaviorSubject(null);
-  constructor(/*private angularFireMessaging: AngularFireMessaging, */ private swPush: SwPush) {}
+  constructor(private http: HttpClient, private swPush: SwPush) {}
   requestPermission() {
     // this.angularFireMessaging.requestToken.subscribe({
     //   next: token => {
@@ -28,6 +29,7 @@ export class MessagingService {
       })
       .then((sub) => {
         console.log('Notification Subscription: ', sub);
+        // this.http.post('http://localhost:9000/api/notifications', sub);
       })
       .catch((err) => console.error('Could not subscribe to notifications', err));
   }

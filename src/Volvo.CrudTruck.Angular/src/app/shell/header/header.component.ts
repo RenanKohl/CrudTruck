@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { AuthenticationService, CredentialsService } from '@app/auth';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -24,7 +25,10 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
-    this.authenticationService.logout().subscribe(() => this.router.navigate(['/login'], { replaceUrl: true }));
+    this.authenticationService.logout().subscribe(() => {
+      this.credentialsService.setCredentials();
+      this.router.navigate(['/'], { replaceUrl: true })
+    });
   }
 
   get username(): string | null {

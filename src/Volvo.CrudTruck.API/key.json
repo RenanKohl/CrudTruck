@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "crudtruck",
+  "private_key_id": "616bde349b367cbcc281efe022243ec47fcc1841",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDER6uL8rnOYFeA\nKKSlSsLVUbo4DppVL3R7vnDv0ZL4GzdIA3P68em4yRmBo/nFUTBZ1BicX9BBtnqm\n3E8Hp3sT7grXx6uUUOPJTOTAl1aMrErteK+CBNEHj/UjY80MO9hp+20wuUvm77MG\nS84P33Q3QvdZTMv3knWo0s+ZaXFqc53q4pB8+oNdttKI5w9AJvaGnL+CisvBPOU8\nbk0tMrimfdnCswx0WQn84eCemSvnCwWVJ3W+Pu3bBtFkgsU+7aDiCsBNSzfMpfjm\nN2+nbpiT+4UetOYAslOTySJvGqzlTCh4JZPx4qeK5V+uVTywIkjW0HTI548L6EuW\nzWourzwXAgMBAAECggEAK1MumIuRW+6EIfPWs+2WqAOMOUdv5ZG+Anp871KxQDax\nsyGf/ipbzsAE80rAnT9Yjtt0O0Ai9f5TgHVstGHRlwqaNhsK0ogwX4SrkZ9WKWL2\nfwh+pRJvGV47W/5xilvDX1FyPqkICgeq2p7s8y/9tR0BACMlepZHhmZSEKjnsflE\nS/AYCLynWtzJd1+l55yRc9Cb8Nsf/O59amlu3R3oagD12dFFEmeXCsqlmrkT4YZR\nxUm/5i3i635lgCAkO5ncMWvKNdO/P0DLcPJ00aezEcz6agxsXHljWfg1vAVaWXhG\noMAVPzUGYNhOk0bBc79fUKmUC4BvL+tRMxswcd4T0QKBgQDlaZCRF7tuFzjVzGZj\nq+YYGDDXsmJdp61BB3nc/Nz7UPCUDLUKOXpHFiGgYvptJDofIhbTOrsABks73Ewo\nG24K7venAj8vApx+Mm+41nfwMROHgrQoSKC38fEFDlJQ1upvtnbGfpum9i6rdvfB\n4FLfKoofy5ZxwukRYtI1jD8r5QKBgQDbBxmm5b9Y0Hz9jCvGPk9cfuDZc/B+YTlh\nuOLcTkOXUsRPv7SfYdOWOm0j7etujI3yzwZ9xtZXNToiEd1GUshAfMFGo4f2eSCL\nIRypirLU0FdwwtmWvC3IvBQTiN0zIH32v16i/akVpGqMOqsnvBTfAFFu18qbhuQY\npIZzcGHgSwKBgQDbT1aXjgNs1CBOKq+7GurFH+MZYHuuoov6/aWe/9BVJGRIc/li\nA96ENIEC7XwPeDFj79e4KI36EQo8+HWJZeeF5jqz2m8ChtGJxreNEOHpqVDNG8MU\nO5IBJvZM6gsBIuNM1janvQMZ0oB9BCcHnWY711Ph32M776OVLk5cSG1fjQKBgQDX\nZtAvdtsLuV5y7BtQx4685Hq04HSvlWYdWPqitsV6WId/9oToCglQQP18zEsxWUFw\nfXFg2N+KvGoDf5Yhxt/xq79YfRMFrnH24gWSJzlgWdTkrHvY5hAQzgbgf0UrNtUq\niWHE4bob8qpmZnxUg3/zIBj17XrwIWTJZ2Riuy9GqQKBgD2xwirIy1E8icAR69Tw\nX2etmpz9oJB2k5YejERS2jK3NHgE5m9mLXcV6jipOc+zzdDhoGp/7gzXQY7eqe8w\nDa5FC0+o9Kwj6Vf9s1bc4ph8bHMloD5DLsfAJSDDv1gK1kuPVA0V2MGbFn5lqJAx\niX8MetlKH2Rhid1gka6aMqL7\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-3uai9@crudtruck.iam.gserviceaccount.com",
+  "client_id": "107845267361552843018",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3uai9%40crudtruck.iam.gserviceaccount.com"
+}

@@ -1,8 +1,12 @@
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO;
 using Volvo.CrudTruck.API.Helpers;
 using Volvo.CrudTruck.Data.Context;
 
@@ -45,6 +49,10 @@ namespace Volvo.CrudTruck.API
                 app.UseSpaStaticFiles();
                 app.UseHsts();
             }
+            var defaultApp = FirebaseApp.Create(new AppOptions()
+            {
+                Credential = GoogleCredential.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "key.json")),
+            });
 
             app.UseCors(builder => builder.AllowAnyMethod()
                             .AllowAnyOrigin()

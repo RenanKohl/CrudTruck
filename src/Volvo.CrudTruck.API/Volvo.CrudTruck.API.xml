@@ -30,6 +30,12 @@
             </summary>
             <returns></returns>        
         </member>
+        <member name="M:Volvo.CrudTruck.API.Controllers.AccountController.SendNotify(System.String)">
+            <summary>
+            Notify user login endpoint
+            </summary>
+            <returns></returns>        
+        </member>
         <member name="M:Volvo.CrudTruck.API.Controllers.TrucksController.GetAll">
             <summary>
             Search all trucks in database

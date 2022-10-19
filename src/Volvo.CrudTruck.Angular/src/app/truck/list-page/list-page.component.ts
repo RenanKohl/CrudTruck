@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { BaseResponse } from '@app/@shared/models/base-response';
@@ -20,7 +20,7 @@ import { OnlineOfflineService } from '@app/@core/onlineoffline.service';
   templateUrl: './list-page.component.html',
   styleUrls: ['./list-page.component.scss'],
 })
-export class ListPageComponent implements OnInit {
+export class ListPageComponent implements OnInit, AfterViewInit {
   public playTooltip: string;
   public stopTooltip: string;
   public editTooltip: string;
@@ -42,7 +42,6 @@ export class ListPageComponent implements OnInit {
   public dataSource = new MatTableDataSource<Truck>([]);
   public isOnline: boolean;
 
-
   @ViewChild('paginator', { static: true }) paginator: MatPaginator;
   @ViewChild('sort', { static: true }) sort: MatSort;
   constructor(
@@ -55,6 +54,18 @@ export class ListPageComponent implements OnInit {
     private router: Router,
     private readonly onlineOfflineService: OnlineOfflineService
   ) {}
+  ngAfterViewInit(): void {
+    this.onlineOfflineService.connectionChanged.subscribe((online: any) => {
+      this.isOnline = online;
+      if (online) {
+        this.getTrucks();
+      } else {
+        this.trucks.forEach((truck) => {
+          console.log(truck);
+        });
+      }
+    });
+  }
 
   protected getTranslations(): void {
     this.playTooltip = this.translateService.instant('Play');
@@ -77,36 +88,23 @@ export class ListPageComponent implements OnInit {
     });
 
     this.getTrucks();
-
-    this.onlineOfflineService.connectionChanged.subscribe((online: any) => {
-      this.isOnline = online;
-      if(online){
-        this.getTrucks();
-      }else{
-        this.trucks.forEach(truck=>{
-          console.log(truck)
-        })
-      }
-      
-    })
   }
 
   getTrucks() {
     this.spinner.show();
-    console.log('get trucks')
-    console.log(this.onlineOfflineService.isOnline)
-  
+    console.log('get trucks');
+    console.log(this.onlineOfflineService.isOnline);
+
     if (this.onlineOfflineService.isOnline) {
-      console.log('from api')
-      this.getAllFromAPI()
-    }else{
-      console.log('from indexed db')
+      console.log('from api');
+      this.getAllFromAPI();
+    } else {
+      console.log('from indexed db');
       this.getAllFromIndexedDb();
     }
-  
   }
 
-  getAllFromAPI(){
+  getAllFromAPI() {
     this.truckService.getAll().subscribe(
       (res: BaseResponse<Truck[]>) => {
         console.log(res);
@@ -124,13 +122,16 @@ export class ListPageComponent implements OnInit {
     );
   }
 
-  getAllFromIndexedDb(){
-    this.truckService.getAllFromIndexedDb().then(res =>{
-      this.trucks = res.data;
-      this.renderGrid(this.trucks);
-    }).finally(()=>{
-      this.spinner.hide()
-    })
+  getAllFromIndexedDb() {
+    this.truckService
+      .getAllFromIndexedDb()
+      .then((res) => {
+        this.trucks = res.data;
+        this.renderGrid(this.trucks);
+      })
+      .finally(() => {
+        this.spinner.hide();
+      });
   }
 
   newItem() {

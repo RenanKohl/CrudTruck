@@ -42,7 +42,7 @@ export class TruckService {
     });
   }
 
-  async getAllFromIndexedDb(){
+  async getAllFromIndexedDb() {
     const allItems: Truck[] = await this.db.trucks.toArray();
     return { data: allItems, error: false, message: '' } as BaseResponse<Truck[]>;
   }

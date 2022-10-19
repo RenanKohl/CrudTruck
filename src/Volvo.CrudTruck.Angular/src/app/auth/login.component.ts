@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
           this.loginForm.markAsPristine();
           untilDestroyed(this);
           this.router.navigate([this.route.snapshot.queryParams.redirect || '/'], { replaceUrl: true });
-          this.authenticationService.credentialsService.setCredentials(data, false);
+          this.authenticationService.credentialsService.setCredentials(data, true);
         } else {
           console.log(res.message);
           this.error = res.message;
