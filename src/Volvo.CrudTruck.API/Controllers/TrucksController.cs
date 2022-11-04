@@ -49,7 +49,7 @@ namespace Volvo.CrudTruck.API.Controllers
         /// <summary>
         /// Insert a new truck in database
         /// </summary>
-        /// <returns></returns>        
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(typeof(BaseModel<TruckModel.Response>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BaseModel<TruckModel.Response>), StatusCodes.Status401Unauthorized)]
@@ -61,7 +61,7 @@ namespace Volvo.CrudTruck.API.Controllers
         /// <summary>
         /// Update an existing truck in database
         /// </summary>
-        /// <returns></returns>        
+        /// <returns></returns>
         [HttpPut("{id}")]
         [ProducesResponseType(typeof(BaseModel<TruckModel.Response>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BaseModel<TruckModel.Response>), StatusCodes.Status401Unauthorized)]

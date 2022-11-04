@@ -21,6 +21,7 @@ namespace Volvo.CrudTruck.UnitTest
         public UserService UserService;
         public TruckService TruckService;
         public AutoMocker Mocker;
+        public DateTime Now = DateTime.Now;
 
         public UserModel.Request GerarUsuarioModelValido()
         {
@@ -32,11 +33,11 @@ namespace Volvo.CrudTruck.UnitTest
         }
         public TruckModel.Request GerarTruckModelValido()
         {
-            return new TruckModel.Request() { Model = "FH", ModelYear = 2021 };
+            return new TruckModel.Request() { Model = "FH", ModelYear = Now.Year };
         }
         public TruckModel.Request GerarTruckModelInvalido()
         {
-            return new TruckModel.Request() { Model = "FY", ModelYear = 2019 };
+            return new TruckModel.Request() { Model = "FY", ModelYear = Now.Year-2 };
         }
         public Task<User> GerarUsuarioValido()
         {
@@ -58,12 +59,12 @@ namespace Volvo.CrudTruck.UnitTest
 
         public Task<Truck> GerarCaminhaoValido()
         {
-            return Task.FromResult(new Truck("FH", 2021));
+            return Task.FromResult(new Truck("FH", Now.Year+1));
         }
 
         public Task<Truck> GerarCaminhaoInvalido()
         {
-            return Task.FromResult(new Truck("FY", 2019));
+            return Task.FromResult(new Truck("FY", Now.Year-2));
         }
 
         public UserService ObterUserService()
