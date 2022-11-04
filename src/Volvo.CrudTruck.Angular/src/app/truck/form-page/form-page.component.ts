@@ -125,7 +125,7 @@ export class FormPageComponent implements OnInit {
 
   protected actionsForSuccess(response: BaseResponse<Truck>) {
     if (!response.error) {
-      this.toastr.success(response.message, '');
+      this.toastr.success(this.translateService.instant(response.message), '');
     }
 
     const baseComponentPath: string = this.route.snapshot.parent.url[0].path;

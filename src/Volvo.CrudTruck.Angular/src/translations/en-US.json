@@ -42,5 +42,9 @@
   "Loading": "Loading",
 
   "pt-BR": "Portuguese",
-  "en-US": "English"
+  "en-US": "English",
+
+  "Registro incluído com sucesso": "Record included with success",
+  "Registro atualizado com sucesso": "Record updated with success",
+  "Registro removido com sucesso": "Record removed with success"
 }

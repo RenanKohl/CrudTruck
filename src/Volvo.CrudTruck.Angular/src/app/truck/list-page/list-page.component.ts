@@ -159,7 +159,7 @@ export class ListPageComponent implements OnInit, AfterViewInit {
             return;
           }
 
-          this.toastrService.success(`${res.message}`, this.event);
+          this.toastrService.success(this.translateService.instant(res.message), this.event);
           this.refreshTable();
         });
       }

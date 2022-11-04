@@ -19,6 +19,14 @@ Cypress.Commands.add('login', () => {
   cy.get(':nth-child(2) > .form-control').type('123');
   cy.get('form.ng-dirty > .btn').click();
  })
+
+ Cypress.Commands.add('selectLanguage', () => { 
+  cy.clearCookies()
+  cy.clearLocalStorage()
+  cy.visit('http://localhost:8000')
+  cy.get('#current-language').click();
+  cy.get('#en-US').click();
+ })
 //
 //
 // -- This is a child command --
@@ -36,6 +44,7 @@ Cypress.Commands.add('login', () => {
   declare namespace Cypress {
     interface Chainable {
       login(): Chainable<any>
+      selectLanguage(): Chainable<any>
       // drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       // dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       // visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>

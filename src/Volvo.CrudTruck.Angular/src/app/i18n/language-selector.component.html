@@ -3,12 +3,12 @@
     {{ currentLanguage | translate }}
   </a>
   <ng-template #button>
-    <button id="language-dropdown" class="btn btn-sm btn-secondary" ngbDropdownToggle>
+    <button id="current-language" class="btn btn-sm btn-secondary" ngbDropdownToggle>
       {{ currentLanguage }}
     </button>
   </ng-template>
   <div ngbDropdownMenu aria-labelledby="language-dropdown" [ngClass]="menuClass">
-    <button class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)">
+    <button [id]="language" class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)">
       {{ language | translate }}
     </button>
   </div>

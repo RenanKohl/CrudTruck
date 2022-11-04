@@ -24,6 +24,7 @@
             <div class="form-group">
               <label class="d-block">
                 <input
+                  id="username"
                   type="text"
                   class="form-control"
                   formControlName="login"
@@ -41,6 +42,7 @@
               </label>
               <label class="d-block">
                 <input
+                  id="password"
                   type="password"
                   class="form-control"
                   formControlName="password"
@@ -50,6 +52,7 @@
                 />
                 <span hidden translate>Password</span>
                 <small
+                  id="validation-message"
                   [hidden]="loginForm.controls.password.valid || loginForm.controls.password.untouched"
                   class="text-danger"
                   translate
@@ -59,7 +62,7 @@
               </label>
               <div class="form-check"></div>
             </div>
-            <button class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
+            <button id="login" class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
               <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
               <span translate>Login</span>
             </button>

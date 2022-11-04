@@ -41,5 +41,9 @@
   "Loading": "Carregando",
 
   "pt-BR": "Português",
-  "en-US": "Inglês"
+  "en-US": "Inglês",
+
+  "Registro incluído com sucesso": "Registro incluído com sucesso",
+  "Registro atualizado com sucesso": "Registro atualizado com sucesso",
+  "Registro removido com sucesso": "Registro removido com sucesso"
 }

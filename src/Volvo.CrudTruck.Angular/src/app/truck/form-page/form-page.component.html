@@ -10,36 +10,38 @@
         <form [formGroup]="formData" (ngSubmit)="submitForm($event)" (keydown.enter)="$event.preventDefault()">
           <div class="card-body">
             <ngx-spinner bdColor="rgba(0,0,0,0.3)" size="small" color="#fff" type="line-scale" [fullScreen]="false">
-              <p style="color: white" translate>Loading</p>
+              <p style="color: white" id="loading" translate>Loading</p>
             </ngx-spinner>
             <div class="form-row">
               <div class="col">
                 <div class="form-group">
-                  <label for="name" class="mb-1" translate>Model</label>
+                  <label for="model" class="mb-1" translate>Model</label>
                   <select
+                    id="model"
                     class="form-control"
                     formControlName="model"
                     [ngClass]="{
                       'is-invalid': formData.get('model').touched && formData.controls['model'].invalid
                     }"
                   >
-                    <option value="FH">FH</option>
-                    <option value="FM">FM</option>
+                    <option id="FH" value="FH">FH</option>
+                    <option id="FM" value="FM">FM</option>
                   </select>
                   <app-form-field-error [form-control]="formData.get('model')"></app-form-field-error>
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <label for="name" class="mb-1" translate>ModelYear</label>
+                  <label for="model-year" class="mb-1" translate>ModelYear</label>
                   <select
+                    id="model-year"
                     class="form-control"
                     formControlName="modelYear"
                     [ngClass]="{
                       'is-invalid': formData.get('modelYear').touched && formData.controls['modelYear'].invalid
                     }"
                   >
-                    <option *ngFor="let year of yearModels" [ngValue]="year">{{ year }}</option>
+                    <option [id]="year" *ngFor="let year of yearModels" [ngValue]="year">{{ year }}</option>
                   </select>
                   <app-form-field-error [form-control]="formData.get('modelYear')"></app-form-field-error>
                 </div>
@@ -47,11 +49,11 @@
             </div>
           </div>
           <div class="card-footer">
-            <button type="submit" class="btn btn-primary btn-sm mr-1" [disabled]="formData.invalid || submittingForm">
+            <button id="save" type="submit" class="btn btn-primary btn-sm mr-1" [disabled]="formData.invalid || submittingForm">
               <i class="far fa-save"></i> {{ 'Save' | translate }}
             </button>
 
-            <button type="button" class="btn btn-default btn-sm" (click)="back()">
+            <button id="return" type="button" class="btn btn-default btn-sm" (click)="back()">
               <i class="fas fa-arrow-alt-circle-left"></i> {{ 'Back' | translate }}
             </button>
           </div>
